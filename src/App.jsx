@@ -1,12 +1,15 @@
+import routes from '~react-pages'
+import {Suspense} from "react";
+import {useRoutes} from "react-router-dom";
+
+
 function App() {
 
-  return (
-    <>
-   <h1 className="text-xl text-red-500">
-       Simple application
-   </h1>
-    </>
-  )
+    return (
+        <Suspense fallback={<p>Loading...</p>}>
+            {useRoutes(routes)}
+        </Suspense>
+    )
 }
 
 export default App
