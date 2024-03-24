@@ -22,12 +22,12 @@
   }
 }
 
-
 header {
   .navbar {
+    position: absolute;
     height: auto;
-    background-color: transparent;
-    position: relative;
+    width: 100%;
+    //background-color: white;
     border-bottom: orangered solid 1px;
     z-index: 10;
 
@@ -35,15 +35,14 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 30px;
-
+      padding: 0.7rem 1.5rem;
 
       a {
         display: flex;
         align-items: center;
         gap: 0.3rem;
 
-        h1 {
+        p {
           font-weight: bold;
           color: black;
 

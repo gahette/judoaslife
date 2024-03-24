@@ -38,9 +38,9 @@ const Header = () => {
                     <a href="/"
                        className="logo-link">
                         <img src={logo} width={120} className="logo" alt="logo"/>
-                        <h1>
+                        <p>
                             JudoAs<span className="logo-name2">Life</span>
-                        </h1>
+                        </p>
                     </a>
 
 
