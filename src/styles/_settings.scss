@@ -1,0 +1,35 @@
+@import "@/styles/libs/reset";
+@import "breakpoints";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "PT Sans", serif;
+  font-size: 1rem;
+
+
+  @include md{
+    font-size: 1.5rem;
+  }
+
+  @include lg {
+    font-size: 2rem;
+  }
+}
+
+.logo{
+  width: auto;
+  height: 7vh;
+
+
+}

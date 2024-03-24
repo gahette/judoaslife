@@ -1,0 +1,152 @@
+@import "@/styles/settings";
+@import "@/styles/breakpoints";
+
+
+.menu-icon {
+  @include verticalCenter;
+  flex-direction: column;
+  z-index: 4;
+
+  p {
+    color: orangered;
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+
+  @include md {
+    display: none;
+    cursor: pointer;
+    color: black;
+  }
+}
+
+
+header {
+  .navbar {
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    border-bottom: orangered solid 1px;
+    z-index: 10;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+
+        h1 {
+          font-weight: bold;
+          color: black;
+
+          span {
+            color: orangered;
+          }
+        }
+      }
+
+      .nav-elements {
+        position: absolute;
+        width: 0;
+        height: 100vh;
+        overflow: hidden;
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease-in;
+
+        @include md {
+          position: relative;
+          overflow: auto;
+          width: auto;
+          height: auto;
+        }
+      }
+
+      .nav-elements.active {
+        width: 200px;
+        background-color: transparent;
+        transition: 0.8s;
+      }
+
+      .nav-elements {
+        ul {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10vh;
+          padding-left: 20px;
+
+          @include md {
+            @include verticalCenter;
+            flex-direction: row;
+            margin-top: 0;
+            gap: 0.3rem;
+          }
+
+          li {
+            @include verticalCenter;
+            margin-right: auto;
+            margin-top: 22px;
+
+            @include md {
+              margin-top: 0;
+              margin-left: 1rem;
+            }
+
+            .nav-active {
+
+              position: relative;
+              color: orangered;
+
+              &::after {
+                content: "";
+                height: 1px;
+                width: 0;
+                background: orangered;
+                position: absolute;
+                border-radius: 10px;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-animation: anim 0.3s ease forwards;
+                animation: anim 0.6s ease forwards;
+
+                @-webkit-keyframes anim {
+                  to {
+                    width: 100%;
+                  }
+                }
+                @keyframes anim {
+                  to {
+                    width: 100%;
+                  }
+                }
+
+              }
+            }
+
+            a {
+              color: black;
+            }
+
+            .active {
+              color: orangered;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

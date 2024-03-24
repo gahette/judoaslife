@@ -4,6 +4,11 @@ const navLinks = [
         id: '/',
     },
     {
+      title: 'Les origines du judo',
+        id: '/origin',
+
+    },
+    {
         title: 'Les techniques',
         id: '/techniques',
     },

@@ -10,15 +10,15 @@ const Footer = () => {
                 <a href="/"
                    className="flex items-center">
                     <img src={logo} width="120" className="absolute top-nav mt-6" alt="logo"/>
-                    <span className="text-lg lg:text-xl ml-28">
-                        JudoAs<span className="text-red-500">Life</span>
+                    <span className="text-lg lg:text-xl ml-28 font-primary">
+                        JudoAs<span className="text-red-500 font-primary">Life</span>
                     </span>
                 </a>
 
                 <div className="flex">
-                    <span className="text-xs lg:text-md md:text-lg ml-28 text-slate-400">2024 JudoAs<span
-                        className="text-red-500">Life </span>réalisé par <span
-                        className="text-slate-600">JBgahetteCode</span></span>
+                    <span className="text-xs lg:text-md md:text-lg ml-28 text-slate-400 font-primary">2024 JudoAs<span
+                        className="text-red-500 font-primary">Life </span>réalisé par <span
+                        className="text-slate-600 font-primary">JBgahetteCode</span></span>
                 </div>
             </nav>
         </footer>

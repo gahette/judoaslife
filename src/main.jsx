@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App.jsx";
 import Footer from "@layout/Footer.jsx";
 import Header from "@layout/Header.jsx";
-import "./index.css";
+import "@/styles/index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
